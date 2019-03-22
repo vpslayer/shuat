@@ -16,6 +16,7 @@ public class subSetsII {
         for(int i=index; i<num.length; ) {
             path.add(num[i]);
             dfs(res, num, new ArrayList<>(path), i+1);
+            // if pass the reference, path will be changed in the recurrsion, so pass the copy of path
             path.remove(path.size()-1);
             i++;
             while(i<num.length && num[i] == num[i-1]) {i++;}
