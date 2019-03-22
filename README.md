@@ -1,1 +1,1 @@
-leetcode ex
+leetcode exes
