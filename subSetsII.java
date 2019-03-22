@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class subSetsII {
     public static List<List<Integer>> subSetsWithDups(int[] num) {
-        Arrays.sort(num);
+        Arrays.sort(num);  // sort the array to skip the same numbers later
         List<List<Integer>> result = new ArrayList<>();
         ArrayList<Integer> path = new ArrayList<>();
         dfs(result, num, path, 0);
