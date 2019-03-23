@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class permutations {
+public class Permutations {
     public static List<List<Integer>> permuate(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
         ArrayList<Integer> temp = new ArrayList<>();

@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.ArrayList;
 
-public class threeSum {
+public class ThreeSum {
     public static List<List<Integer>> arrRes(int[] num)  {
         Arrays.sort(num);
         List<List<Integer>> res = new ArrayList<>();

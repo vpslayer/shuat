@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class subSets {
+public class SubSets {
     public static List<List<Integer>> subArr(int[] num) {
         List<List<Integer>> res = new ArrayList<>();
         dfs(num, res, new ArrayList<>(), 0);

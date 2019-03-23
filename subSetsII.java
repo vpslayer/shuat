@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.ArrayList;
 
-public class subSetsII {
+public class SubSetsII {
     public static List<List<Integer>> subSetsWithDups(int[] num) {
         Arrays.sort(num);  // sort the array to skip the same numbers later
         List<List<Integer>> result = new ArrayList<>();
