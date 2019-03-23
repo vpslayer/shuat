@@ -1,4 +1,4 @@
-## leetcode exes
+## leetcode
 
 * [3Sum](https://leetcode.com/problems/3sum/)
 * [subSets](https://leetcode.com/problems/subsets/)
