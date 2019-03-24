@@ -7,12 +7,14 @@ public class ThreeSum {
         Arrays.sort(num);
         List<List<Integer>> res = new ArrayList<>();
         for(int i=0; i<num.length -2; i++) {
+            // skip the same numbers
             if(i==0 || num[i] != num[i-1]) {
                 int sum = 0 - num[i];
                 int lo = i+1, hi = num.length-1;
                 while(lo < hi) {
                     if(num[lo] + num[hi] == sum) {
                         res.add(Arrays.asList(num[i], num[lo], num[hi]));
+                        // skip
                         while(lo<hi && num[lo+1]==num[lo]) lo++;
                         while(lo<hi && num[hi-1]==num[hi]) hi--;
                         lo++;
