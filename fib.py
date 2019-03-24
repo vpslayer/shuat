@@ -6,7 +6,7 @@ def fib1(n):
     cur = 1
     if(n==0 or n==1):
         return n
-    for i in range(1, n):
+    for _ in range(1, n):
         res = pre + cur
         pre = cur
         cur = res
