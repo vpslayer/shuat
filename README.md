@@ -5,4 +5,4 @@
 * [subSetsII](https://leetcode.com/problems/subsets-ii/)
 * [permutations](https://leetcode.com/problems/permutations/)
 * [combinations](https://leetcode.com/problems/combinations/)
-* [word-search] (https://leetcode.com/problems/word-search/)
+* [word-search](https://leetcode.com/problems/word-search/)
