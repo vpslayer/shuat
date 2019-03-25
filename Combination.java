@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class  Combination {
+public class Combination {
 
     /**
     public static List<List<Integer>> combine (int n, int k) {
@@ -27,7 +27,7 @@ public class  Combination {
     // optimization 
     public static List<List<Integer>> combine(int n, int k) {
         List<List<Integer>> result = new ArrayList<>();
-        Integer[] temp = new Integer[k]; // Integer[] is reusable, so no need to constuct a new one in recursion
+        Integer[] temp = new Integer[k]; // Integer[] is reusable, so no need to construct a new one in recursion
         combine(result, temp, 1, n, 0, k);
         return result;
     }
