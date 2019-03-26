@@ -24,7 +24,7 @@ public class WordSearch {
             || exist(board, y, x-1, word, i+1)
             || exist(board, y+1, x, word, i+1)
             || exist(board, y-1, x, word, i+1);
-        board[y][x] ^= 256;
+        board[y][x] ^= 256;  // if false, restore it
         return exist;
     }
     public static void main(String[] args) {
