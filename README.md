@@ -7,3 +7,4 @@
 * [combinations](https://leetcode.com/problems/combinations/)
 * [word-search](https://leetcode.com/problems/word-search/)
 * [Combination Sum](https://leetcode.com/problems/combination-sum/)
+* [CombinationSum4](https://leetcode.com/problems/combination-sum-iv/)
