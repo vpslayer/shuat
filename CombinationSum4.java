@@ -38,6 +38,6 @@ public class CombinationSum4 {
     public static void main(String[] args) {
         int[] nums = {1, 2, 3};
         int tar = 4;
-        System.out.println("The different combinations is " + combination(nums, tar));
+        System.out.println("The different combinations are " + combination(nums, tar));
     }
 }
