@@ -2,6 +2,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.ArrayList;
 
+// tag: backtracking
+
 public class SubSetsII {
     public static List<List<Integer>> subSetsWithDups(int[] num) {
         Arrays.sort(num);  // sort the array to skip the same numbers later

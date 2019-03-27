@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
+// tag: backtracking
+
 public class Permutations {
     public static List<List<Integer>> permuate(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();

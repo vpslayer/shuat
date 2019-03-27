@@ -1,5 +1,6 @@
-// type: dp, recursion
 import java.util.Arrays;
+
+// tag: dp, recursion
 
 public class CombinationSum4 {
     /** 

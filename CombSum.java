@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Arrays;
 
+// tag: backtracking
+
 public class CombSum {
     public static List<List<Integer>> combineSum(int[] candidates, int target) {
         Arrays.sort(candidates);

@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
+// tag: backtracking
+
 public class SubSets {
     public static List<List<Integer>> subArr(int[] num) {
         List<List<Integer>> res = new ArrayList<>();

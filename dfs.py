@@ -1,4 +1,4 @@
-# dfs search to find the connected components in a graph
+# tag: graph, dfs search
 
 graph = {'A': set(['B', 'C']),
          'B': set(['A', 'D', 'E']),

@@ -4,6 +4,8 @@ Case 2: th e previously visited x,y was a match. Then applying the bit mask of 2
 would change that to a not match for any ASCII letter we consider. Hence it will always be false until we apply the XOR again to bring back the original letter (which by then we are done exploring the neighbors anyway).
 */
 
+// tag: bitmasking, backtracking
+
 public class WordSearch {
     public static boolean exist(char[][] board, String word) {
         char[] w = word.toCharArray();
