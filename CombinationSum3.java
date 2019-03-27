@@ -15,6 +15,7 @@ public class CombinationSum3 {
             return;
         }
         // prune branches in for loop
+        // 递归函数执行完 if没有返回值 结束返回到上一个递归函数 so不用return
         for(int i=start; i<10 && temp.size()<len && i<=target; i++) {
             temp.add(i);
             combination(res, temp, len, target-i, i+1);  // i+1 -> avoid duplicates in recursion
