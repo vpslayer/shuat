@@ -10,6 +10,7 @@ public class CombinationSum4 {
         dp[0]=1;  
         return helper(nums, target);
     }
+    // top-down method, time complexity O(n)
     private static int helper(int[] nums, int target) {
         // recursion stops when dp[x]!=-1
         if(dp[target]!=-1) return dp[target];
@@ -21,6 +22,8 @@ public class CombinationSum4 {
         return res;
     }
     */
+
+    // bottum-up method, time complexity O(n*target)
     public static int combination(int[] nums, int target) {
         int[] res = new int[target+1];
         res[0] = 1;
