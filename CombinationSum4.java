@@ -2,6 +2,7 @@
 import java.util.Arrays;
 
 public class CombinationSum4 {
+    /** 
     private static int[] dp; // dp: class attribute; store intermediate results
     public static int combination(int[] nums, int target) {
         dp = new int[target+1];
@@ -18,6 +19,17 @@ public class CombinationSum4 {
         }
         dp[target]=res;
         return res;
+    }
+    */
+    public static int combination(int[] nums, int target) {
+        int[] res = new int[target+1];
+        res[0] = 1;
+        for(int i=1; i<res.length; i++) {
+            for(int j=0; j<nums.length; j++) {
+                if((i-nums[j])>=0) res[i] += res[i-nums[j]];
+            }
+        }
+        return res[target];
     }
     public static void main(String[] args) {
         int[] nums = {1, 2, 3};
