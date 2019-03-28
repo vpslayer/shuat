@@ -1,6 +1,8 @@
 import java.util.List;
 import java.util.ArrayList;
 
+// tag: recursion, dfs
+
 public class genParenthesis {
     public static List<String> generate(int n) {
         List<String> result = new ArrayList<>();
