@@ -12,3 +12,4 @@
 * [CombinationSum2](https://leetcode.com/problems/combination-sum-ii/submissions/)
 * [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)
 * [MergeTwoSortedLists](https://leetcode.com/problems/merge-two-sorted-lists/)
+* [House Robber](https://leetcode.com/problems/house-robber/)
