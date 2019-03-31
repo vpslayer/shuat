@@ -23,6 +23,7 @@ public class BinaryTree {
     }
 
     // null in arr
+    /** 
     public static Node insertLevelOrder(Integer[] arr, Node root, int i) {
         // constructor call when new a class, no need of return value
         if(i < arr.length && arr[i] != null) {
@@ -34,6 +35,7 @@ public class BinaryTree {
         }
         return root;
     }
+    */
     public static Node arr2Tree(Integer[] arr, int start) {
         /*
         for(int i=0; 2*(i+1) < arr.length; i++) {
