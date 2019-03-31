@@ -12,7 +12,7 @@ class Node {
 }
 // tag: binary tree, post-order traversal
 public class PathSum {
-    public static boolean hasPathSum(Node root, int sum) {
+    public static boolean hasPathSum_iter(Node root, int sum) {
         int temp = 0;
         // pre指针是上一次访问过的Node
         Node pre = null, cur = root;
@@ -40,6 +40,11 @@ public class PathSum {
         }
         return false;
     }
+    public static boolean hasPathSum_recur(Node root, int sum) {
+        if(root == null) return false;
+        if(root.left == null && root.right == null && root.val == sum) return true;
+        return hasPathSum_iter(root.left, sum-root.val) || hasPathSum_iter(root.right, sum-root.val);
+    }
     public static void main(String[] args) {
         // hard coded binary tree :(
         Node tree = new Node(5);
@@ -52,7 +57,7 @@ public class PathSum {
         tree.right.right = new Node(4);
         tree.right.right.right = new Node(1);
         int sum = 22;
-        boolean res = hasPathSum(tree, sum);
+        boolean res = hasPathSum_recur(tree, sum);
         System.out.printf("Tree %s a root to leaf path that sums up to %d.", res ? "has": "doesn't hava",sum);
     }
 }
