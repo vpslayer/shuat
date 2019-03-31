@@ -16,12 +16,12 @@ public class genParenthesis {
             //return;
         }
         // recursive case
-        // back to last dfs in recursion stack, but no other task other(check from the printed stack trace)
+        // back to last dfs in recursion stack, but no other task(check from the printed stack trace)
         if(open<pairs) {
             dfs(res, temp+"(", open+1, close, pairs);
             System.out.println(open + " " + close);
         }
-        if(close<open) {
+        if(close<open) { // 保证递归过程中加入的open和close括号相同
             dfs(res, temp+")", open, close+1, pairs);
             System.out.println(open + " " + close);
         }
