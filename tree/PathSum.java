@@ -1,15 +1,6 @@
 import java.util.Deque;
 import java.util.ArrayDeque;
 
-class Node {
-    int val;
-    Node left, right;
-    Node(int x) { 
-        this.val = x;
-        this.left = null;
-        this.right = null;
-    }
-}
 // tag: binary tree, post-order traversal
 public class PathSum {
     public static boolean hasPathSum_iter(Node root, int sum) {
