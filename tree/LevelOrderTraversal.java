@@ -3,7 +3,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class LevelOrderTraversal {
-    public static List<List<Integer>> leverTraverse(Node root) {
+    public static List<List<Integer>> levelTraverse(Node root) {
 
         List<List<Integer>> result = new LinkedList<>();
         LinkedList<Node> queue = new LinkedList<>();
@@ -37,6 +37,6 @@ public class LevelOrderTraversal {
         root.left.left = new Node(2);
         root.left.right = new Node(4);
         root.right.right = new Node(7);
-        System.out.println(leverTraverse(root));
+        System.out.println(levelTraverse(root));
     }
 }
