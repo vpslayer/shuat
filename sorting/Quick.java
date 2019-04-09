@@ -58,13 +58,13 @@ public class Quick {
 
     private static void show(Comparable[] a) {
         for(int i=0; i<a.length; i++) {
-            System.out.print(a[i] + " ");
+            System.out.println(a[i]);
         }
     }
     // ==========================================
    
     public static void main(String[] args) {
-        Integer[] arr = {3,1,5,6,9,1};
+        Integer[] arr = {3,1,5,6,9,1,0,2,10,3,21,19,30,7};
         sort(arr);
         show(arr);
     }
