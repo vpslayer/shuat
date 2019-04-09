@@ -38,6 +38,7 @@ public class Quick {
         assert(c.length != 0);
         int len = c.length;
         for(int i=0; i<len; i++) {
+            // r的区间向右移动且逐渐变小 nextInt(n): [0, n)
             int r = i + random.nextInt(len - i);
             Comparable tmp = c[i];
             c[i] = c[r];
