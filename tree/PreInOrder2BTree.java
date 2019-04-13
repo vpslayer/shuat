@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-import SubSetsII;
 
 public class PreInOrder2BTree {
     // static 即不需要Pre...类的对象来初始化TreeNode类，两者是独立的，没有static即从属关系，要用this.new TreeNode()初始化之
