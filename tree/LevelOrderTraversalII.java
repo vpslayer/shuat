@@ -12,6 +12,7 @@ public class LevelOrderTraversalII {
     private static void dfs(List<List<Integer>> res, Node root, int level) {
         if(root == null) return;
         if(level >= res.size()) res.add(0, new LinkedList<Integer>());
+        // post-order traversal
         dfs(res, root.left, level + 1);
         dfs(res, root.right, level + 1);
         res.get(res.size()-level-1).add(root.val);
