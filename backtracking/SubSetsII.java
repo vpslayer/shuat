@@ -21,6 +21,7 @@ public class SubSetsII {
             // if pass the reference, path will be changed in the recursion, so pass the copy of path
             path.remove(path.size()-1);
             i++;
+            // skip掉后面重复的值 去重
             while(i<num.length && num[i] == num[i-1]) {i++;}
         }
         }
